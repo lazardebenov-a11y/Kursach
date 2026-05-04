@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos</title>
+    <link rel="stylesheet" href="choto/css/beys.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+    
+        body {
+            font-family: system-ui, sans-serif;
+            background: #fff
+        }
+    
+        .header {
+            background: #000;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center
+        }
+    
+        .header h1 {
+            font-size: 2rem;
+            letter-spacing: 2px
+        }
+    
+        .header p {
+            opacity: .7;
+            margin-top: 8px
+        }
+    
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px
+        }
+    
+        .grid {
+            margin: 20;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 25px
+        }
+    
+        .card {
+            border: 2px solid #000;
+            background: #fff;
+            overflow: hidden
+        }
+    
+        .img {
+            position: relative;
+            height: 220px;
+            background: #eee
+        }
+    
+        .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           
+        }
+    
+        .badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #000;
+            color: #fff;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 30px
+        }
+    
+        .price {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: #000;
+            color: #fff;
+            padding: 6px 14px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 30px
+        }
+    
+        .ppm {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: #000;
+            color: #ccc;
+            padding: 4px 10px;
+            font-size: 11px;
+            border-radius: 30px
+        }
+    
+        .content {
+            padding: 16px
+        }
+
+        .niz{
+            margin-top: 30px;
+    background-color: rgba(44, 53, 48, 0.432);
+    padding: 3%;
+}
+
+.nom{
+    width: 90%;
+    height: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: black;
+    
+
+}
+    
+        .title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px
+        }
+    
+        .loc {
+            color: #555;
+            font-size: .85rem;
+            margin-bottom: 12px
+        }
+    
+        .details {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #000;
+            font-size: 13px;
+            color: #333
+        }
+    
+        .desc {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 12px
+        }
+    
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+            border-top: 1px solid #000;
+            padding-top: 12px
+        }
+    
+        .btn {
+            background: #000;
+            color: #fff;
+            border: 1px solid #000;
+            border-radius: 40px;
+            padding: 6px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 12px
+        }
+    
+    </style>
+</head>
+<body>
+    <Div style="margin: 1%;">
+        <Div class="verh">
+            <a href="index.html"><img src="choto/foto/editing_result_f1bc62ec470811f1ad3cc2e198aa8aab_1.jfif" alt="Chaos" class="Chaos"> </a>
+            <h2 class="n">Хаос</h2>
+            <H2 style=" margin-left: auto; margin-right: 4%; "><a href="index.html">Каталог квартир</a></H2>
+            <H2 style="  margin-right: 4%; "><a href="glavnoe.html">Главная</a></H2>
+            <H2 style="  margin-right: 4%; "><a href="otziv.Html">Отзывы</a></H2>
+            <H2 style="  margin-right: 4%; "><a href="poderjk.Html">Контакты</a></H2>
+        </Div>
+        <div class="f"></div>
+    </Div>
+    
+    <body>
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/2b/71/483700a9ee3591102bf91a57475f4ee56a63712b.avif">
+                        <span class="badge">ПРОДАЖА</span>
+                        <div class="price">2 850 000 ₽</div>
+                        <div class="ppm">61 957 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Уютная однушка</div>
+                        <div class="loc">Черемхово, Амурская</div>
+                        <div class="details"><span>1 комн</span><span>46 м²</span><span>5/9 эт</span><span>Балкон</span>
+                        </div>
+                        <div class="desc">Светлая квартира. Рядом школа, поликлиника.</div>
+                        <div class="footer"><button class="btn">
+                            <a href="podrobn1.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/8d/a7/7d494eb40065a1a3a9739b0d5d68935d13b1a78d.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">3 200 000 ₽</div>
+                        <div class="ppm">71 111 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Двушка с балконом</div>
+                        <div class="loc">Черемхово, Горького</div>
+                        <div class="details"><span>2 комн</span><span>45 м²</span><span>3/5 эт</span><span>Лоджия</span>
+                        </div>
+                        <div class="desc">Тихий двор, рядом парк и ТЦ.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn2.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/33/2b/92d63e7e841f722bbc70b05d33b4b2a5b57d2b33.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">3 500 000 ₽</div>
+                        <div class="ppm">79 545 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Студия в новостройке</div>
+                        <div class="loc">Черемхово, Антосяк</div>
+                        <div class="details"><span>Студия</span><span>44 м²</span><span>6/10 эт</span><span>Паркинг</span>
+                        </div>
+                        <div class="desc">Новый ЖК, свободная планировка.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn3.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/b9/a3/dbbd88db0305ca66a0f01ff9d2a7a2bfa169a3b9.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">2 450 000 ₽</div>
+                        <div class="ppm">61 250 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Однушка у парка</div>
+                        <div class="loc">Черемхово, Блюхера</div>
+                        <div class="details"><span>1 комн</span><span>40 м²</span><span>4/9 эт</span><span>Балкон</span>
+                        </div>
+                        <div class="desc">Выход к парку, транспортная доступность.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn4.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/4f/c0/e8af2b59f2cd44e7c4085b8fe2f49df35151c04f.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">3 800 000 ₽</div>
+                        <div class="ppm">76 000 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Двушка в центре</div>
+                        <div class="loc">Черемхово, Горняцкая</div>
+                        <div class="details"><span>2 комн</span><span>50 м²</span><span>7/9 эт</span><span>Балкон</span>
+                        </div>
+                        <div class="desc">Просторная, рядом остановки.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn1.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/a6/045f607a7e2cef22d65be284ee2ed9e19c8377a6.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">2 200 000 ₽</div>
+                        <div class="ppm">55 000 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Студия для семьи</div>
+                        <div class="loc">Черемхово, Декабрьских Событий</div>
+                        <div class="details"><span>Студия</span><span>40 м²</span><span>2/5 эт</span><span>Лоджия</span>
+                        </div>
+                        <div class="desc">Экологичный район, рядом детский сад.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn2.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects26/02/9c/fffc85c05348b33aec738e1d55467a3e26eb959c.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">3 900 000 ₽</div>
+                        <div class="ppm">78 000 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Трёшка в спальном</div>
+                        <div class="loc">Черемхово, Кирова</div>
+                        <div class="details"><span>3 комн</span><span>50 м²</span><span>8/9 эт</span><span>Балкон</span>
+                        </div>
+                        <div class="desc">Рядом школа, рынок.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn3.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects26/03/70/71b48b9f91ab9e6c7273984dc8275106c4baaa70.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">3 400 000 ₽</div>
+                        <div class="ppm">70 833 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Двушка в новостройке</div>
+                        <div class="loc">Черемхово, Ленина</div>
+                        <div class="details"><span>2 комн</span><span>48 м²</span><span>4/10 эт</span><span>Паркинг</span>
+                        </div>
+                        <div class="desc">Новый ЖК, транспортная развязка.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn4.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/1d/c7/0617d17443eed50d5d2aac9477c198be1b5cc71d.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">4 200 000 ₽</div>
+                        <div class="ppm">84 000 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Однушка с ремонтом</div>
+                        <div class="loc">Черемхово, Некрасова</div>
+                        <div class="details"><span>1 комн</span><span>50 м²</span><span>9/9 эт</span><span>Балкон</span>
+                        </div>
+                        <div class="desc">С мебелью, рядом метро.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn1.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/2f/36/a3f756cad0cd2181d476f2a935de18f6c5fa362f.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">3 700 000 ₽</div>
+                        <div class="ppm">77 083 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Уютная двушка</div>
+                        <div class="loc">Черемхово, Плеханова</div>
+                        <div class="details"><span>2 комн</span><span>48 м²</span><span>6/9 эт</span><span>Лоджия</span>
+                        </div>
+                        <div class="desc">Рядом метро, для семьи.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn2.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/4f/a7/84a7fd72a2ef817c0c1575176f15803b193aa74f.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">2 900 000 ₽</div>
+                        <div class="ppm">63 043 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Однушка на первом</div>
+                        <div class="loc">Черемхово, Шевченко</div>
+                        <div class="details"><span>1 комн</span><span>46 м²</span><span>1/5 эт</span><span>Балкон</span>
+                        </div>
+                        <div class="desc">Отдельный вход.</div>
+                        <div class="footer"><button class="btn">><a href="podrobn3.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="https://cdn.esoft.digital/320240/cluster/ecoobjects/dd/4c/8380c2f9a326141da81aa6a79670bf6a83334cdd.avif"><span
+                            class="badge">ПРОДАЖА</span>
+                        <div class="price">3 150 000 ₽</div>
+                        <div class="ppm">70 000 ₽/м²</div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Студия в центре</div>
+                        <div class="loc">Черемхово, Щербакова</div>
+                        <div class="details"><span>Студия</span><span>45 м²</span><span>3/9 эт</span><span>Паркинг</span>
+                        </div>
+                        <div class="desc">Вся инфраструктура рядом.</div>
+                        <div class="footer"><button class="btn"><a href="podrobn4.html" style="color: aliceblue;">ПОДРОБНЕЕ</a></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="niz">
+            <P>Свезатся по номеру: <a href="tel:+7 933 355 05 26">+7 933 355 05 26</a></P>
+            <div class="nom"></div>
+            <p>г. Москва, ул. Профсоюзная, д. 56, этаж 10, м. Новые Черемушки, тел. +7 933 355 05 26</p>
+            <div class="nom"></div>
+            <div class="w2jtv">
+                <div class="AXodB" style="margin-bottom: 10px  ;">Наш рейтинг 3,2 из 5 (<span id="rating-count">18</span>)</div>
+                <div class="">
+                    <div class="plr_RdI"><span class="plr_cvS">3.2 из 5</span><span class="plr_Pky" aria-hidden="true">
+                            <span class="plr_Ysk"><svg style="color: yellow; width=" 16" height="16" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                    </path>
+                                </svg></span><span class="plr_Ysk"><svg style="color: yellow ; width=" 16" height="16"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                    </path>
+                                </svg></span><span class="plr_Ysk"><svg style="color: yellow; width =" 16" height="16"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                    </path>
+                                </svg></span><span class="plr_Ysk"><svg width="16" height="16" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                    </path>
+                                </svg></span><span class="plr_Ysk"><svg width="16" height="16" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                    </path>
+                                </svg></span></span>
+                    </div>
+                </div>
+                <a href="otziv.Html">
+                    <p style="margin-top 10px ">Оцените сайт</p>
+                </a>
+                <div class="nom"></div>
+                <span>Авторы: Дебенов Лазарь Сергеевичь (2 ис 24)
+                    <div class="nom"></div>
+            </div>
+    </body>
+    
+    </html>
+    
+           
+</body>
+</html>

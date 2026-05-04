@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+}
+  body {
+      font-family: system-ui, sans-serif;
+      background: #fff
+  }
+
+.verh {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 10px;
+    margin: 10px;
+
+}
+
+.Chaos {
+    max-height: 100px;
+
+}
+
+.n {
+
+    margin-left: 1%;
+}
+
+.f {
+    width: 85%;
+    margin: auto;
+    height: 3px;
+    background-color: black;
+}
+
+a {
+    color: black;
+    transition: color 800ms ease;
+    text-decoration: none;
+}
+
+a:hover:hover {
+    color: rgb(218, 59, 59);
+}
+
+
+.g {
+    display: flex ;
+}
+
+.left {
+    width: 15%;
+    text-align: center;
+
+}
+.chentar {
+    width: 70%;
+}
+.right {
+    width: 15%;
+    
+}
+
+.fd{
+    text-align: center;
+    display: block;
+    padding: 7px ;
+    margin: 50px;
+
+}
+.df{
+    max-width: 70vw;
+    margin: 0 auto;
+    height: 7px;
+    background-color:black;
+    text-align: center;
+}
+.niz{
+    background-color: rgba(44, 53, 48, 0.432);
+    padding: 3%;
+}
+
+.nom{
+    width: 90%;
+    height: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: black;
+    
+
+}
+
+  

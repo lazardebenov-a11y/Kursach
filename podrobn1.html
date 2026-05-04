@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квартира на Стронции</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            border: 2px solid #000;
+            border-radius: 24px;
+            padding: 30px;
+        }
+
+        /* сетка для 5 фото — эстетично, 3 вверху, 2 внизу */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .photo-item {
+            overflow: hidden;
+            border-radius: 16px;
+            background: #f5f5f5;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* расположение: первые три в первом ряду, следующие два во втором */
+        .photo-item:nth-child(1) {
+            grid-row: 1;
+        }
+
+        .photo-item:nth-child(2) {
+            grid-row: 1;
+        }
+
+        .photo-item:nth-child(3) {
+            grid-row: 1;
+        }
+
+        .photo-item:nth-child(4) {
+            grid-row: 2;
+        }
+
+        .photo-item:nth-child(5) {
+            grid-row: 2;
+        }
+
+        /* адаптив: на узких экранах 2 колонки, потом 1 */
+        @media (max-width: 700px) {
+            .photo-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .photo-item:nth-child(1) {
+                grid-row: 1;
+                grid-column: span 1;
+            }
+
+            .photo-item:nth-child(2) {
+                grid-row: 1;
+                grid-column: span 1;
+            }
+
+            .photo-item:nth-child(3) {
+                grid-row: 2;
+                grid-column: span 2;
+            }
+
+            .photo-item:nth-child(4) {
+                grid-row: 3;
+                grid-column: span 1;
+            }
+
+            .photo-item:nth-child(5) {
+                grid-row: 3;
+                grid-column: span 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .photo-item {
+                grid-column: span 1 !important;
+                grid-row: auto !important;
+            }
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .address {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 28px;
+            border-left: 4px solid #000;
+            padding-left: 18px;
+        }
+
+        .price-block {
+            border: 2px solid #000;
+            border-radius: 32px;
+            padding: 18px 24px;
+            margin-bottom: 30px;
+            background: #fff;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #000;
+        }
+
+        .price-per-m {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 6px;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 18px;
+            margin-bottom: 30px;
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 24px;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .spec-value {
+            color: #333;
+        }
+
+        .description {
+            margin-bottom: 32px;
+            line-height: 1.55;
+            font-size: 1rem;
+            padding: 20px;
+            background: #fff;
+            border-left: 4px solid #000;
+            border-radius: 12px;
+        }
+
+        .description strong {
+            color: #000;
+        }
+
+        .agent-card {
+            background: #fff;
+            border: 2px solid #000;
+            border-radius: 28px;
+            padding: 24px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .agent-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .agent-phone {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #000;
+        }
+  body {
+      font-family: system-ui, sans-serif;
+      background: #fff
+  }
+
+.verh {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 10px;
+    margin: 10px;
+
+}
+
+.Chaos {
+    max-height: 100px;
+
+}
+       .niz{
+        margin-top: 30px;
+    background-color: rgba(44, 53, 48, 0.432);
+    padding: 3%;
+}
+
+.nom{
+    width: 90%;
+    height: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: black;
+    
+
+}
+
+.n {
+
+    margin-left: 1%;
+}
+
+.f {
+    width: 85%;
+    margin: auto;
+    height: 3px;
+    background-color: black;
+}
+
+a {
+    color: black;
+    transition: color 800ms ease;
+    text-decoration: none;
+}
+
+a:hover:hover {
+    color: rgb(218, 59, 59);
+}
+        .agent-note {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .call-button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 40px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 20px;
+            }
+
+            .agent-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+            }
+
+            .price {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <Div style="margin: 1%;">
+        <Div class="verh">
+        <a href="index.html"><img src="choto/foto/editing_result_f1bc62ec470811f1ad3cc2e198aa8aab_1.jfif" alt="Chaos"
+                class="Chaos"> </a>
+            <h2 class="n">Хаос</h2>
+            <H2 style=" margin-left: auto; margin-right: 4%; "><a href="index.html">Каталог квартир</a></H2>
+            <H2 style="  margin-right: 4%; "><a href="glavnoe.html">Главная</a></H2>
+            <H2 style="  margin-right: 4%; "><a href="otziv.Html">Отзывы</a></H2>
+            <H2 style="  margin-right: 4%; "><a href="poderjk.Html">Контакты</a></H2>
+        </Div>
+        <div class="f"></div>
+    </Div>
+    <div class="container">
+        <!-- 5 эстетично расположенных фото (без эффектов) -->
+        <div class="photo-grid">
+            <div class="photo-item"><img src="https://cdn.esoft.digital/19201080/cluster/ecoobjects/2b/71/483700a9ee3591102bf91a57475f4ee56a63712b.avif"
+                    alt="Кухня-гостиная"></div>
+            <div class="photo-item"><img src="https://cdn.esoft.digital/19201080/cluster/ecoobjects/96/70/60ef7ccad3c6a6d08b03d686f257d2c2984a7096.avif"
+                    alt="Спальня"></div>
+            <div class="photo-item"><img src="https://cdn.esoft.digital/19201080/cluster/ecoobjects/3a/f0/34106f9283f400d5ba57af6ea287276c6279f03a.avif"
+                    alt="Вид из окна"></div>
+            <div class="photo-item"><img src="https://cdn.esoft.digital/19201080/cluster/ecoobjects/2c/7b/af3a04d690b35b4ef00d3097c3ff81d075507b2c.avif"
+                    alt="Ванная комната"></div>
+            <div class="photo-item"><img src="https://cdn.esoft.digital/19201080/cluster/ecoobjects/7a/ca/dcdad88d11667f753476417a5b1ee1ccc77aca7a.avif"
+                    alt="Балкон"></div>
+                    <div class="photo-item"><img
+                            src="https://cdn.esoft.digital/19201080/cluster/ecoobjects/21/46/2e208beddf12e4bccfdf8c9b7ab5756259f54621.avif"
+                            alt="Балкон"></div>
+        </div>
+
+        <h1 class="title">Уютная однушка</h1>
+        <div class="address">г. Черемхово, ул. Амурская, д. 12</div>
+
+        <div class="price-block">
+            <div class="price">2 850 000 ₽</div>
+            <div class="price-per-m">92 268 ₽ за м²</div>
+        </div>
+
+        <div class="specs">
+            <div class="spec-item"><span class="spec-label">Общая площадь</span><span class="spec-value">97 м²</span>
+            </div>
+            <div class="spec-item"><span class="spec-label">Жилая площадь</span><span class="spec-value">58 м²</span>
+            </div>
+            <div class="spec-item"><span class="spec-label">Площадь кухни</span><span class="spec-value">15 м²</span>
+            </div>
+            <div class="spec-item"><span class="spec-label">Количество комнат</span><span class="spec-value">3</span>
+            </div>
+            <div class="spec-item"><span class="spec-label">Этаж</span><span class="spec-value">7 / 12</span></div>
+            <div class="spec-item"><span class="spec-label">Высота потолков</span><span class="spec-value">2,75 м</span>
+            </div>
+            <div class="spec-item"><span class="spec-label">Санузел</span><span class="spec-value">Раздельный</span>
+            </div>
+            <div class="spec-item"><span class="spec-label">Балкон / лоджия</span><span class="spec-value">Застеклённый
+                    балкон</span></div>
+            <div class="spec-item"><span class="spec-label">Ремонт</span><span class="spec-value">Дизайнерский, под
+                    ключ</span></div>
+            <div class="spec-item"><span class="spec-label">Тип дома</span><span class="spec-value">Монолитный кирпич,
+                    2024 г.</span></div>
+            <div class="spec-item"><span class="spec-label">Парковка</span><span class="spec-value">Подземный
+                    паркинг</span></div>
+            <div class="spec-item"><span class="spec-label">Лифт</span><span class="spec-value">Пассажирский +
+                    грузовой</span></div>
+        </div>
+
+        <div class="description">
+            <strong>Описание:</strong> Светлая трёхкомнатная квартира в новом жилом комплексе «Атомный парк» на улице
+            Мира.
+            Просторная кухня-гостиная, две изолированные спальни, панорамные окна. Дизайнерский ремонт с использованием
+            натуральных материалов. Встроенная кухонная техника, кондиционирование, тёплые полы в санузлах.
+            Развитая инфраструктура: школа в 3 минутах, детский сад, супермаркет, сквер. До метро «Стронц-1» — 10 минут
+            пешком.
+            Охраняемый двор, видеонаблюдение. Отличный вариант для комфортной жизни семьи.
+        </div>
+
+        <div class="agent-card">
+            <div class="agent-info">
+                <h3>Агент по продаже</h3>
+                <div class="agent-phone">+7 (916) 345-67-89</div>
+                <div class="agent-note">Иван Петров • Лицензия № 12345<br>Работаю без выходных, показ в любое время
+                </div>
+            </div>
+            <div>
+                <a href="tel:+79163456789" class="call-button">ПОЗВОНИТЬ АГЕНТУ</a>
+            </div>
+        </div>
+    </div>
+    <div class="niz">
+        <P>Свезатся по номеру: <a href="tel:+7 933 355 05 26">+7 933 355 05 26</a></P>
+        <div class="nom"></div>
+        <p>г. Москва, ул. Профсоюзная, д. 56, этаж 10, м. Новые Черемушки, тел. +7 933 355 05 26</p>
+        <div class="nom"></div>
+        <div class="w2jtv">
+            <div class="AXodB" style="margin-bottom: 10px  ;">Наш рейтинг 3,2 из 5 (<span id="rating-count">18</span>)</div>
+            <div class="">
+                <div class="plr_RdI"><span class="plr_cvS">3.2 из 5</span><span class="plr_Pky" aria-hidden="true">
+                        <span class="plr_Ysk"><svg style="color: yellow; width=" 16" height="16" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                </path>
+                            </svg></span><span class="plr_Ysk"><svg style="color: yellow ; width=" 16" height="16"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                </path>
+                            </svg></span><span class="plr_Ysk"><svg style="color: yellow; width =" 16" height="16"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                </path>
+                            </svg></span><span class="plr_Ysk"><svg width="16" height="16" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                </path>
+                            </svg></span><span class="plr_Ysk"><svg width="16" height="16" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M13.423 2.836a1.848 1.848 0 0 0-3.093.002l-2.526 3.85a.25.25 0 0 1-.134.102L3.304 8.155c-1.214.38-1.697 1.849-.944 2.882l2.812 3.858a.25.25 0 0 1 .048.154l-.124 4.785c-.034 1.318 1.265 2.253 2.494 1.798l4.32-1.599a.25.25 0 0 1 .179.002l4.059 1.597c1.224.456 2.523-.47 2.497-1.785l-.095-4.8a.25.25 0 0 1 .047-.15l2.797-3.864c.747-1.033.264-2.497-.947-2.877L16.088 6.79a.25.25 0 0 1-.134-.102l-2.53-3.852z">
+                                </path>
+                            </svg></span></span>
+                </div>
+            </div>
+            <a href="otziv.Html">
+                <p style="margin-top:10px;">Оцените сайт</p>
+            </a>
+            <div class="nom"></div>
+            <span>Авторы: Дебенов Лазарь Сергеевичь (2 ис 24)
+                <div class="nom"></div>
+        </div>
+</body>
+
+</html>

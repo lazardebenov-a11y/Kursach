@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+.verh {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 10px;
+    margin: 10px;
+
+}
+
+.Chaos {
+    max-height: 100px;
+
+}
+
+.n {
+
+    margin-left: 1%;
+}
+
+.f {
+    width: 85%;
+    margin: auto;
+    height: 3px;
+    background-color: black;
+}
+
+a {
+    color: black;
+    transition: color 800ms ease;
+    text-decoration: none;
+}
+
+a:hover:hover {
+    color: rgb(218, 59, 59);
+}
+
